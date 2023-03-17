@@ -27,6 +27,7 @@
       "@nuxt/types",
       "@types/node",
       "@nuxtjs/i18n",
+      "cookie-universal-nuxt/types",
       "@types/jest",
       "@types/faker",
       "@types/rosie",
