@@ -28,7 +28,10 @@ export default {
   },
 
   plugins: [
-
+    { src: '~/plugins/init-store.ts', ssr: true },
+    { src: '~/plugins/api.ts', ssr: true },
+    { src: '~/plugins/auth.ts', ssr: true },
+    { src: '~/plugins/vee-validate.ts', ssr: true }
   ],
 
   components: true,
@@ -38,6 +41,7 @@ export default {
   ],
 
   modules: [
+    'cookie-universal-nuxt',
     '@nuxtjs/style-resources',
     '@nuxtjs/i18n'
   ],
@@ -75,6 +79,7 @@ export default {
     }
   },
   env: {
+    BASE_URL: process.env.BASE_URL as string
   },
   vue: {
     config: {
