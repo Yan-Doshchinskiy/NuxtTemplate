@@ -28,7 +28,8 @@ export default {
   },
 
   plugins: [
-
+    { src: '~/plugins/api.ts', ssr: true },
+    { src: '~/plugins/auth.ts', ssr: true }
   ],
 
   components: true,
@@ -75,6 +76,7 @@ export default {
     }
   },
   env: {
+    BASE_URL: process.env.BASE_URL as string
   },
   vue: {
     config: {
