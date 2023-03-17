@@ -1,0 +1,14 @@
+@mixin scroll-style {
+  &::-webkit-scrollbar {
+    height: 3px;
+    width: 4px;
+    border-radius: 100px;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-600;
+    border-radius: 20px;
+  }
+  scrollbar-color: #393C41 transparent;
+  scrollbar-width: thin;
+}

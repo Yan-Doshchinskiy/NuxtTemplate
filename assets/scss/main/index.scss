@@ -1,0 +1,29 @@
+@import "_reset.css";
+@import "_typography.scss";
+@import "../styleResources/_variables.scss";
+
+/* prevents screen shifts when the scrollbar appears */
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
+  width: 100%;
+  // overflow-x: hidden;
+}
+
+p {
+  word-break: break-word;
+  overflow-x: hidden;
+}
+
+.nuxt-link-exact-active, .nuxt-link-active {
+  text-decoration: none;
+}
+
+.web3modal-modal-lightbox {
+  z-index: 200 !important;
+}
