@@ -38,7 +38,7 @@ import UiLoaderSmall from '~/components/shared/UiLoaderSmall/index.vue';
 
 import type { COMPUTED_STYLE } from '~/enums/ui';
 
-export type TButtonVariant = 'primary' | 'secondary' | 'danger' | 'grey' | 'telegram' | 'transparent-blue' | 'blue' | 'transparent-teal' | 'text';
+export type TButtonVariant = 'primary' | 'secondary' | 'danger';
 export type TIconPosition = 'left' | 'right'
 
 @Component({
@@ -62,12 +62,6 @@ export default class UiButton extends Vue {
         'ui-button_primary': variant === 'primary',
         'ui-button_secondary': variant === 'secondary',
         'ui-button_danger': variant === 'danger',
-        'ui-button_grey': variant === 'grey',
-        'ui-button_telegram': variant === 'telegram',
-        'ui-button_transparent-blue': variant === 'transparent-blue',
-        'ui-button_blue': variant === 'blue',
-        'ui-button_transparent-teal': variant === 'transparent-teal',
-        'ui-button_text': variant === 'text',
         'ui-button_loading': this.isLoading
       }
     ];
@@ -144,7 +138,7 @@ export default class UiButton extends Vue {
   }
 
   &_primary {
-    background-color: $teal;
+    background-color: $blue;
     color: $white;
 
     ::v-deep i::before {
@@ -153,11 +147,11 @@ export default class UiButton extends Vue {
     }
 
     &:hover {
-      background-color: $teal-hover;
+      background-color: $blue-hover;
     }
 
     &:active {
-      background-color: $teal-hover;
+      background-color: $blue-hover;
       box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.2);
     }
 
@@ -169,32 +163,32 @@ export default class UiButton extends Vue {
   }
 
   &_secondary {
-    color: $teal;
+    color: $blue;
     background-color: transparent;
-    border: 1px solid $teal;
+    border: 1px solid $blue;
     font-weight: 400;
     padding: 11px 15px;
     ::v-deep i::before {
       transition: $transition;
-      color: $teal;
+      color: $blue;
     }
 
     &:hover {
-      border-color: $teal-hover;
-      color: $teal-hover;
+      border-color: $blue-hover;
+      color: $blue-hover;
 
       ::v-deep i::before {
-        color: $teal-hover;
+        color: $blue-hover;
       }
     }
 
     &:active {
-      border-color: $teal-hover;
+      border-color: $blue-hover;
       color: $black;
       box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1);
 
       ::v-deep i::before {
-        color: $teal-hover;
+        color: $blue-hover;
       }
     }
 
@@ -237,120 +231,6 @@ export default class UiButton extends Vue {
 
   &_loading {
     pointer-events: none;
-  }
-
-  &_grey {
-    padding: 7px 6px;
-    background-color: $gray-200;
-    color: $black;
-    ::v-deep i::before {
-      font-size: 16px;
-      transition: $transition;
-      color: $black;
-    }
-
-    &:hover {
-      background-color: $gray-300;
-    }
-
-    &:active {
-      background-color: $gray-400;
-    }
-
-    &:disabled {
-      background-color: $gray-200;
-      color: $gray-500;
-      cursor: default;
-      box-shadow: none;
-      ::v-deep i::before {
-        color: $gray-500;
-      }
-    }
-  }
-
-  &_telegram {
-    font-family: 'Arial', sans-serif;
-    border-radius: 20px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 500;
-    padding: 9px 21px;
-
-    background-color: $blue-telegram;
-    color: $white;
-
-    ::v-deep i::before {
-      font-size: 22px;
-      transition: $transition;
-      color: $white;
-    }
-
-    &:hover {
-      background-color: $blue-telegram-hover;
-    }
-
-    &:disabled {
-      background-color: $gray-500;
-      cursor: default;
-      box-shadow: none;
-    }
-  }
-
-  &_transparent-blue {
-    background-color: transparent;
-    color: $blue;
-    font-weight: 400;
-    padding: 0;
-    width: max-content;
-
-    ::v-deep i::before {
-      transition: $transition;
-      color: $blue;
-    }
-
-    &:disabled {
-      color: $gray-500;
-      ::v-deep i::before {
-        color: $gray-500;
-      }
-    }
-  }
-
-  &_blue {
-    background-color: $blue-light;
-    color: $blue;
-    width: max-content;
-
-    ::v-deep i::before {
-      transition: $transition;
-      color: $blue;
-    }
-
-    &:disabled {
-      color: $gray-500;
-      ::v-deep i::before {
-        color: $gray-500;
-      }
-    }
-  }
-
-  &_transparent-teal {
-    background-color: transparent;
-    color: $teal;
-    font-weight: 400;
-    padding: 0;
-    width: max-content;
-
-    ::v-deep i::before {
-      transition: $transition;
-      color: $teal;
-    }
-    &:disabled {
-      color: $gray-500;
-      ::v-deep i::before {
-        color: $gray-500;
-      }
-    }
   }
 
   &_text {
