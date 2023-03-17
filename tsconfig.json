@@ -27,6 +27,11 @@
       "@nuxt/types",
       "@types/node",
       "@nuxtjs/i18n",
+      "@types/jest",
+      "@types/faker",
+      "@types/rosie",
+      "@types/lodash.clonedeep",
+      "@types/lodash.merge"
     ]
   },
   "exclude": [
