@@ -1,4 +1,5 @@
 import { getModule } from 'vuex-module-decorators';
+import Auth from '~/store/modules/auth';
 import Main from '~/store/modules/main';
 
 import type { Store } from 'vuex';
@@ -9,6 +10,7 @@ export class StoreCombiner<S = any> { // TODO replace any with correct type
 
   constructor(vuex: Store<S>) {
     this._modules = {
+      auth: getModule<Auth>(Auth, vuex),
       main: getModule<Main>(Main, vuex)
     };
   }
