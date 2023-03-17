@@ -16,7 +16,8 @@
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "husky:init": "yarn husky install & yarn husky set .husky/commit-msg \"yarn commitlint --edit $1\"",
-    "prepare": "yarn husky:init"
+    "prepare": "yarn husky:init",
+    "test": "jest"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.1.0",
@@ -32,23 +33,34 @@
     "vue-template-compiler": "^2.7.10",
     "vuex": "^3.6.2",
     "vuex-class": "^0.3.2",
-    "vuex-module-decorators": "^2.0.0"
+    "vuex-module-decorators": "^2.0.0",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@faker-js/faker": "^7.5.0",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/style-resources": "^1.2.1",
+    "@types/jest": "^27.0.1",
     "@types/node": "^18.13.0",
+    "@types/rosie": "^0.0.40",
+    "@types/lodash.clonedeep": "^4.5.7",
+    "@types/lodash.merge": "^4.6.7",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "@vue/cli-plugin-babel": "5.0.8",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/test-utils": "^1.1.3",
+    "@vue/vue2-jest": "^27.0.0-alpha.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-nuxt": "^1.0.1",
@@ -56,10 +68,14 @@
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.5.1",
     "husky": "^8.0.1",
+    "jest": "^27.0.5",
+    "jest-serializer-vue": "^2.0.2",
+    "rosie": "^2.1.0",
     "sass": "^1.52.1",
     "sass-loader": "^10.2.1",
     "standard-version": "^9.5.0",
     "stylelint": "^14.16.0",
+    "ts-jest": "^27.0.4",
     "webpack": "^4.46.0"
   }
 }

@@ -1,0 +1,498 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UiButton attributes check dataSelector attribute (custom) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-CUSTOM-SELECTOR"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check dataSelector attribute (default) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check disabled attribute (default) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check disabled attribute (false) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check disabled attribute (true) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  disabled="disabled"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check type attribute (button) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check type attribute (default) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check type attribute (reset) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="reset"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton attributes check type attribute (submit) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="submit"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions entry wrapper is visible with default props 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly when isLoading equals to true 1`] = `
+<button
+  class="ui-button ui-button_primary ui-button_loading"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-loader"
+  >
+    <div
+      class="ui-loader__ring"
+    />
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly with label and with both icons 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <div
+      class="ui-button__icon ui-button__icon_left"
+    >
+      <i
+        class="icon-arrow-left"
+      />
+    </div>
+     
+    <span
+      class="ui-button__content"
+    >
+      
+      Custom label
+    
+    </span>
+     
+    <div
+      class="ui-button__icon ui-button__icon_right"
+    >
+      <i
+        class="icon-arrow-right"
+      />
+    </div>
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly with label and with left icon 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <div
+      class="ui-button__icon ui-button__icon_left"
+    >
+      <i
+        class="icon-arrow"
+      />
+    </div>
+     
+    <span
+      class="ui-button__content"
+    >
+      
+      Custom label
+    
+    </span>
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly with label and with right icon 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <span
+      class="ui-button__content"
+    >
+      
+      Custom label
+    
+    </span>
+     
+    <div
+      class="ui-button__icon ui-button__icon_right"
+    >
+      <i
+        class="icon-arrow"
+      />
+    </div>
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly with label and without icons 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <span
+      class="ui-button__content"
+    >
+      
+      Custom label
+    
+    </span>
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly without label and with both icons 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <div
+      class="ui-button__icon ui-button__icon_big ui-button__icon_left"
+    >
+      <i
+        class="icon-arrow-left"
+      />
+    </div>
+     
+    <!---->
+     
+    <div
+      class="ui-button__icon ui-button__icon_big ui-button__icon_right"
+    >
+      <i
+        class="icon-arrow-right"
+      />
+    </div>
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly without label and with left icon 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <div
+      class="ui-button__icon ui-button__icon_big ui-button__icon_left"
+    >
+      <i
+        class="icon-arrow-left"
+      />
+    </div>
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton display conditions works correctly without label and with right icon 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <div
+      class="ui-button__icon ui-button__icon_big ui-button__icon_right"
+    >
+      <i
+        class="icon-arrow-right"
+      />
+    </div>
+  </div>
+</button>
+`;
+
+exports[`UiButton style correct wrapper class with different variants (with loading) 1`] = `
+<button
+  class="ui-button ui-button_primary ui-button_loading"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-loader"
+  >
+    <div
+      class="ui-loader__ring"
+    />
+  </div>
+</button>
+`;
+
+exports[`UiButton style correct wrapper class with different variants (with loading) 2`] = `
+<button
+  class="ui-button ui-button_secondary ui-button_loading"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-loader"
+  >
+    <div
+      class="ui-loader__ring ui-loader__ring_secondary"
+    />
+  </div>
+</button>
+`;
+
+exports[`UiButton style correct wrapper class with different variants (with loading) 3`] = `
+<button
+  class="ui-button ui-button_danger ui-button_loading"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-loader"
+  >
+    <div
+      class="ui-loader__ring"
+    />
+  </div>
+</button>
+`;
+
+exports[`UiButton style correct wrapper class with different variants (withoutLoading) 1`] = `
+<button
+  class="ui-button ui-button_primary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton style correct wrapper class with different variants (withoutLoading) 2`] = `
+<button
+  class="ui-button ui-button_secondary"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
+
+exports[`UiButton style correct wrapper class with different variants (withoutLoading) 3`] = `
+<button
+  class="ui-button ui-button_danger"
+  data-selector="ACTION-TEST"
+  type="button"
+>
+  <div
+    class="ui-button__wrapper"
+  >
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</button>
+`;
